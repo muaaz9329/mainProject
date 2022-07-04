@@ -1,0 +1,462 @@
+ @font-face {
+	font-family: PoFont;
+	src: url('./font/Poppins-Regular.ttf');
+ }
+ @font-face {
+	font-family: PoFontb;
+	src: url('./font/Poppins-SemiBold.ttf');
+ }
+ @font-face {
+	font-family: PoFontExL;
+	src: url("./font/Poppins-ExtraLight.ttf");
+ }
+ @font-face {
+	font-family: PoFontThin;
+	src: url('./font/Poppins-Thin.ttf');
+ }
+ @font-face {
+	font-family: PoFontMed;
+	src: url('./font/Poppins-Medium.ttf');
+ }
+ @font-face {
+	font-family:PoFontL ;
+	src: url('./font/Poppins-Light.ttf');
+ }
+ @font-face {
+	font-family: PoFontB;
+	src: url('./font/Poppins-Bold.ttf');
+ }
+ h1{
+	font-family: PoFontB;
+ }
+ h2,h3,h4{
+	font-family: PoFontb;
+ }
+ 
+ #background 
+{ 
+	font-family: PoFont;
+	color: #454545;
+	 left: 0px; 
+	 top: 0px; 
+	 position: relative; 
+	 margin-left: auto; 
+	 margin-right: auto; 
+	 width: 2350px;
+	 height: 3300px; 
+	 overflow: hidden;
+	 z-index:0;
+	} 
+
+ #ColorFill1 
+{ 
+	 left: 0px; 
+	 top: 0px; 
+	 position: absolute; 
+	 width: 2350px;
+	 height: 3300px;
+	 z-index:1;
+} 
+
+ #Rectangle1 
+{ 
+	 left: 102px; 
+	 top: 1170px; 
+	 position: absolute; 
+	 width: 741px;
+	 height: 945px;
+	 z-index:2;
+}
+
+ #Rectangle1_0 
+{ 
+	 left: 103px; 
+	 top: 156px; 
+	 position: absolute; 
+	 width: 741px;
+	 height: 945px;
+	 z-index:3;
+} 
+
+ #Rectangle1copy 
+{ 
+	 left: 890px; 
+	 top: 1170px; 
+	 position: absolute; 
+	 width: 1359px;
+	 height: 2040px;
+	 z-index:4;
+} 
+
+ #Rectangle1copy2 
+{ 
+	 left: 102px; 
+	 top: 2190px; 
+	 position: absolute; 
+	 width: 741px;
+	 height: 1020px;
+	 z-index:5;
+} 
+
+ #Experience 
+{ 
+	 left: 1017px; 
+	 top: 1310px; 
+	 position: absolute; 
+	 width: 409px;
+	 height: 71px;
+	 z-index:6;
+} 
+
+ #Rectangle5copy4 
+{ 
+	 left: 1017px; 
+	 top: 1447px; 
+	 position: absolute; 
+	 width: 131px;
+	 height: 9px;
+	 z-index:7;
+} 
+
+ #Profile 
+{ 
+	 left: 1012px; 
+	 top: 668px; 
+	 position: absolute; 
+	 width: 235px;
+	 height: 54px;
+	 z-index:8;
+} 
+
+ #Rectangle5copy3 
+{ 
+	 left: 1012px; 
+	 top: 774px; 
+	 position: absolute; 
+	 width: 131px;
+	 height: 9px;
+	 z-index:9;
+} 
+
+ #Contact 
+{ 
+	 left: 251px; 
+	 top: 2328px; 
+	 position: absolute; 
+	 width: 301px;
+	 height: 49px;
+	 z-index:10;
+} 
+
+ #Rectangle5copy2 
+{ 
+	 left: 251px; 
+	 top: 2450px; 
+	 position: absolute; 
+	 width: 131px;
+	 height: 9px;
+	 z-index:11;
+} 
+
+ #Education 
+{ 
+	 left: 251px; 
+	 top: 1309px; 
+	 position: absolute; 
+	 width: 373px;
+	 height: 54px;
+	 z-index:12;
+} 
+
+ #Rectangle5copy 
+{ 
+	 left: 251px; 
+	 top: 1439px; 
+	 position: absolute; 
+	 width: 131px;
+	 height: 9px;
+	 z-index:13;
+} 
+
+ #Skills 
+{ 
+	 left: 251px; 
+	 top: 233px; 
+	 position: absolute; 
+	 width: 191px;
+	 height: 54px;
+	 z-index:14;
+} 
+
+ #Rectangle5copy5 
+{ 
+	 left: 251px; 
+	 top: 322px; 
+	 position: absolute; 
+	 width: 131px;
+	 height: 9px;
+	 z-index:15;
+} 
+.name-cont{
+	width: 1165px;
+	height: 280px;
+	position: relative;
+	bottom: 1950px;
+	left: 800px;
+	margin-bottom: 40px;
+}
+.prof-cont{
+	width: 600px;
+	height: 106px;
+	position: relative;
+	bottom: 1950px;
+	left: 910px;
+}
+.intro-cont{
+	width: 1260px;
+	height: 310px;
+	position: relative;
+	margin:0%;
+	margin-top: 50px;
+}
+.heading-phone-cont{
+	font-size: 50px;
+	font-weight:600;
+	position: relative;
+	
+	top: 80px;
+}
+.phone-cont{
+	position: relative;
+	width: 380px;
+	height: 80px;
+	margin: 0%;
+	top: 30px;
+}
+.heading-email-cont{
+	font-size: 50px;
+	font-weight:600;
+	position: relative;
+	
+	top: 40px;
+}
+.email-cont{
+	position: relative;
+	width: 510px;
+	height: 82px;
+	margin: 0%;
+	bottom:30px;
+}
+.heading-address-cont{
+	font-size: 50px;
+	font-weight:600;
+	position: relative;
+	
+	
+	margin: 0%;
+
+}
+.address-cont{
+	position: relative;
+	width: 510px;
+	height: 220px;
+	margin: 0%;
+
+}
+.exp-cont{
+	position: relative;
+	width: 1100px;
+	height: 495px;
+	margin-top: 60px;
+}
+.exp-from-to-cont{
+	position: relative;
+	width: 253px;
+	height: 47px;
+}
+.exp-company-cont{
+	position: relative;
+	width: 310px;
+	height:  40px;
+	margin-top: 20px;
+}
+.exp-designation-cont{
+	position: relative;
+	width: 400px;
+	height: 50px ;
+	left: 450px;
+	bottom: 100px;
+}
+.exp-infoRole-cont{
+	position: relative;
+	width: 643px;
+	height: 380px;
+	left:450px ;
+	margin: 0%;
+	bottom: 60px;
+}
+.edu-cont{
+	position: relative;
+	width: 500px;
+	height: 190px;
+	margin: 0%;
+	margin-top: 15px;
+}
+.edu-from-to-cont{
+	position: relative;
+	width: 180px;
+	height: 60px;
+	margin:0%;
+	margin-top: 60px;
+	bottom: 50px;
+}
+.edu-degName-cont{
+	position: relative;
+	width: 260px;
+	height: 80px;
+	left: 240px;
+	bottom: 125px;
+}
+.edu-instName-cont{
+	position: relative;
+	width: 500px;
+	height: 80px;
+	
+	bottom: 110px;
+}
+.skill-cont{
+	position: relative;
+	width: 580px;
+	height: 80px;
+	margin:0%;
+	margin-top: 60px;
+}
+.skill-name-cont{
+	position: relative;
+	width: 280px;
+	height: 76px;
+}
+.skill-star-cont{
+	position: relative;
+	width: 280px;
+	height: 76px;
+	left: 290px;
+	bottom: 85px;
+}
+.name-first-cont{
+	padding: 0%;
+	margin: 0%;
+	height: 40%;
+	font-size: 150px;
+	position: relative;
+	padding-bottom: 10px;
+	margin-bottom:20px;
+	bottom: 50px;
+}
+.name-last-cont{
+	font-family: PoFontb;
+	padding: 0%;
+	margin: 0%;
+	height: 40%;
+	font-size: 150px;
+	position: relative;
+	bottom: 30px;
+}
+.prof-para{
+	padding: 0%;
+	margin: 0%;
+	font-family: PoFontL;
+	font-size: 60px;
+}
+.intro-para{
+	padding: 0%;
+	margin: 0%;
+	font-family: PoFont;
+	font-size: 40px;
+}
+.phone-para{
+	padding: 0%;
+	margin: 0%;
+	padding-top: 25px;
+	font-size:50px;	
+}
+.email-para{
+
+	padding: 0%;
+	margin: 0%;
+	padding-top: 60px;
+	font-size:35px;	
+}
+.address-para{
+	position: relative;
+	width: 510px;
+	height: 220px;
+	margin: 0%;
+	padding: 0%;
+	font-size: 40px;
+}
+.From-To-para{
+	font-size: 35px;
+	padding: 0%;
+	margin: 0%;
+	font-family: PoFontMed;
+}
+.degName-para{
+	font-size: 50px;
+	padding: 0%;
+	margin: 0%;
+	font-family:PoFontb;
+}
+.instName-para{
+	font-size: 30px;
+	padding: 0%;
+	margin: 0%;
+	font-family:PoFont;
+}
+.from-to-para{
+	font-size: 35px;
+	padding: 0%;
+	margin: 0%;
+	font-family: PoFont;
+}
+.company-para{
+	font-size: 35px;
+	padding: 0%;
+	margin: 0%;
+	font-family:PoFont;
+}
+.designation-para{
+	font-size: 40px;
+	padding: 0%;
+	margin: 0%;
+	font-family:PoFontb;
+}
+.infoRole-para{
+	font-size: 45px;
+	padding: 0%;
+	margin: 0%;
+	font-family:PoFontL;
+}
+.skill-name-para{
+	font-size: 55px;
+	padding: 0%;
+	margin: 0%;
+	font-family:PoFontMed;
+	position: relative;
+	bottom: 15px;
+}
+.Emptystar,.star{
+	position: relative;
+	width: 50px;
+	height: auto;
+	top: 10px;
+}
+.star-working{
+	display: inline-block;
+}
+
+.full-cont{
+	position: relative;
+	bottom: 3500px;
+	right: 500px;
+}
