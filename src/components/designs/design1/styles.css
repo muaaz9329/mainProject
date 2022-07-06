@@ -26,14 +26,8 @@
 	font-family: PoFontB;
 	src: url('./font/Poppins-Bold.ttf');
  }
- h1{
-	font-family: PoFontB;
- }
- h2,h3,h4{
-	font-family: PoFontb;
- }
  
- #background 
+ .bgbgbg
 { 
 	font-family: PoFont;
 	color: #454545;
@@ -453,10 +447,4 @@
 }
 .star-working{
 	display: inline-block;
-}
-
-.full-cont{
-	position: relative;
-	bottom: 3500px;
-	right: 500px;
 }

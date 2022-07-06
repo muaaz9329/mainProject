@@ -4,19 +4,24 @@ import ExperiencePage from "./ResumePage/ExperiencePage"
 import PersonalInfo from "./ResumePage/PersonalInfo"
 import SkillPage from "./ResumePage/SkillPage"
 import Cont from './constantComponents/Cont'
-import { SubmitPage } from "./ResumePage/SubmitPage"
+import { Link } from "react-router-dom"
+import { useContext } from "react"
+import { InfoContext } from "../contextAPI/ContextApi"
+
 const CreateResume = ()=>{
+  const {totalInfo,setTotalInfo}=useContext(InfoContext)
     const page=<PersonalInfo/>
   const page2  =<EducationPage/>
     const page3=<ExperiencePage/>
    const page4= <SkillPage/>
-   const page5 = <SubmitPage/>
+console.log(totalInfo)
     return(<>
     <HeaderCont page={page}/>
     <Cont page={page2}/>
     <Cont page={page3}/>
     <Cont page={page4}/>
-    <Cont page={page5}/>
+    <Link to='/choDesign'><button>Next</button></Link>
     </>)
+    
 }
 export default CreateResume

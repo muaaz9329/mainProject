@@ -940,11 +940,11 @@ textarea:hover {
 .btn-submit-position{
   position: relative;
   left: 400px;
-  top: 400px;
+  top: 150px;
 }
 .submit-page-heading{
   position: relative;
-  left: 120px;
+  left: 90px;
   font-size: 40px;
   bottom: 50px;
 }
@@ -952,7 +952,7 @@ textarea:hover {
   width: 870px;
   position: relative;
   right: 270px;
-  height: 800px;
+  height: 400px;
   margin: 0%;
   padding: 0%;
   border-radius: 10px;
