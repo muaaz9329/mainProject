@@ -17,10 +17,18 @@ import Rectangle5copy3 from './images/Rectangle5copy3.png'
 import Rectangle5copy4 from './images/Rectangle5copy4.png'
 import Rectangle5copy5 from './images/Rectangle5copy5.png'
 import Skills from './images/Skills.png'
+import StarsSystem from '../StarsSystem';
  const Design1 = ()=>{
+
 	const location = useLocation();
 	const {data} = location.state
 	const personal = data.PersonalData
+	const education = data.EducationData
+	const skill = data.SkillData
+	const experience = data.ExperienceData;
+	const star =<div> <svg class="star"  width="120px" height="120px" viewBox="0 0 120 120" enable-background="new 0 0 120 120" ><circle cx="60" cy="60.834" r="54.167"/></svg></div>
+	const number = parseInt(skill.item1.skillStars);
+
 	function capitalFirst(string) {
 		return string.charAt(0).toUpperCase() + string.slice(1).toLowerCase();;
 	  }
@@ -43,24 +51,71 @@ import Skills from './images/Skills.png'
 					<div id="Rectangle5copy4"><img src={Rectangle5copy4}/>
 					<div className="exp-cont">
 						<div className="exp-from-to-cont">
-							<p className="from-to-para">2021-2022</p>
+							<p className="from-to-para">{experience.item1.from}-{experience.item1.to}</p>
 						</div>
 						<div className="exp-company-cont">
 							<p className="company-para">
-								Company Name
+								{experience.item1.companyName}
 							</p>
 						</div>
 						<div className="exp-designation-cont">
 							<p className="designation-para">
-								Senior UX Designer
+								{experience.item1.role}
 							</p>
 						</div>
 						<div className="exp-infoRole-cont">
 							<p className="infoRole-para">
-								Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna.
+								{experience.item1.info}
 							</p>
 						</div>
 					</div>
+
+
+					<div className="exp-cont">
+						<div className="exp-from-to-cont">
+							<p className="from-to-para">{experience.item2.from}-{experience.item2.to}</p>
+						</div>
+						<div className="exp-company-cont">
+							<p className="company-para">
+								{experience.item2.companyName}
+							</p>
+						</div>
+						<div className="exp-designation-cont">
+							<p className="designation-para">
+								{experience.item2.role}
+							</p>
+						</div>
+						<div className="exp-infoRole-cont">
+							<p className="infoRole-para">
+								{experience.item2.info}
+							</p>
+						</div>
+					</div>
+
+					<div className="exp-cont">
+						<div className="exp-from-to-cont">
+							<p className="from-to-para">{experience.item3.from}-{experience.item3.to}</p>
+						</div>
+						<div className="exp-company-cont">
+							<p className="company-para">
+								{experience.item3.companyName}
+							</p>
+						</div>
+						<div className="exp-designation-cont">
+							<p className="designation-para">
+								{experience.item3.role}
+							</p>
+						</div>
+						<div className="exp-infoRole-cont">
+							<p className="infoRole-para">
+								{experience.item3.info}
+							</p>
+						</div>
+					</div>
+
+
+
+
 					</div>
 					<div id="Profile"><img src={Profile}/></div>
 					<div id="Rectangle5copy3"><img src={Rectangle5copy3}/><div className="intro-cont">
@@ -86,30 +141,116 @@ import Skills from './images/Skills.png'
 					<div id="Rectangle5copy"><img src={Rectangle5copy}/>
 					<div className="edu-cont">
 						<div className="edu-from-to-cont">
-							<p className="From-To-para">2021-2022</p>
+							<p className="From-To-para">{education.item1.from}-{education.item1.to}</p>
 						</div>
 						<div className="edu-degName-cont">
-							<p className="degName-para">BSCS</p>
+							<p className="degName-para">{education.item1.degName}</p>
 						</div>
 						<div className="edu-instName-cont">
-							<p className="instName-para">Khawaja fareed Instituition Of technlogy</p>
+							<p className="instName-para">{education.item1.instName}</p>
 						</div>
 					</div>
+					
+
+
+					<div className="edu-cont">
+						<div className="edu-from-to-cont">{education.item2.from &&
+							<p className="From-To-para">{education.item2.from}-{education.item2.to}</p>}
+						</div>
+						<div className="edu-degName-cont">
+							<p className="degName-para">{education.item2.degName}</p>
+						</div>
+						<div className="edu-instName-cont">
+							<p className="instName-para">{education.item2.instName}</p>
+						</div>
+					</div>
+
+
+
+					<div className="edu-cont">
+						<div className="edu-from-to-cont">{education.item3.from &&
+							<p className="From-To-para">{education.item3.from}-{education.item3.to}</p>}
+						</div>
+						<div className="edu-degName-cont">
+							<p className="degName-para">{education.item3.degName}</p>
+						</div>
+						<div className="edu-instName-cont">
+							<p className="instName-para">{education.item3.instName}</p>
+						</div>
+					</div>
+					
+
+
+
+					
+
+
+
+
 					
 				</div>
 					<div id="Skills"><img src={Skills}/></div>
 					<div id="Rectangle5copy5"><img src={Rectangle5copy5}/>
 					
+
 					<div className="skill-cont">
 						<div className="skill-name-cont">
-							<p className="skill-name-para">Illustrator</p>
+							<p className="skill-name-para">{skill.item1.skillName}</p>
 						</div>
 						<div className="skill-star-cont">
 							<div className="star-working">
-								
+							{parseInt(skill.item1.skillStars) > 0 && <StarsSystem symbol={star} number={parseInt(skill.item1.skillStars)}/>}
 							</div>
 						</div>
 					</div>
+
+					<div className="skill-cont">
+						<div className="skill-name-cont">
+							<p className="skill-name-para">{skill.item2.skillName}</p>
+						</div>
+						<div className="skill-star-cont">
+							<div className="star-working">
+								{parseInt(skill.item2.skillStars) > 0 && <StarsSystem symbol={star} number={parseInt(skill.item2.skillStars)}/>}
+							</div>
+						</div>
+					</div>
+
+					<div className="skill-cont">
+						<div className="skill-name-cont">
+							<p className="skill-name-para">{skill.item3.skillName}</p>
+						</div>
+						<div className="skill-star-cont">
+							<div className="star-working">
+							{parseInt(skill.item3.skillStars) > 0 && <StarsSystem symbol={star} number={parseInt(skill.item3.skillStars)}/>}
+							</div>
+						</div>
+					</div>
+
+					<div className="skill-cont">
+						<div className="skill-name-cont">
+							<p className="skill-name-para">{skill.item4.skillName}</p>
+						</div>
+						<div className="skill-star-cont">
+							<div className="star-working">
+							{parseInt(skill.item4.skillStars) > 0 && <StarsSystem symbol={star} number={parseInt(skill.item4.skillStars)}/>}
+							</div>
+						</div>
+					</div>
+
+
+					<div className="skill-cont">
+						<div className="skill-name-cont">
+							<p className="skill-name-para">{skill.item5.skillName}</p>
+						</div>
+						<div className="skill-star-cont">
+							<div className="star-working">
+							{parseInt(skill.item5.skillStars) > 0 && <StarsSystem symbol={star} number={parseInt(skill.item5.skillStars)}/>}
+							</div>
+						</div>
+					</div>
+
+
+
 					</div>
 				</div>
 		

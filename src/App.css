@@ -1024,3 +1024,31 @@ textarea:hover {
   left: 30px;
   bottom: 50px;
 }
+.company-name-input{
+  left: -310px;
+top: 47px;
+position: absolute;
+width: 373px;
+height: 54px;
+z-index: 12;
+}
+.top-dasig{
+  top: 60px;
+  right: 310px;
+}
+.top-dasig2{
+  position: relative;
+  top: 10px;
+}
+.name-degree{
+  position: relative;
+  right: 400px;
+}
+.small-width{
+  width: 70px;
+}
+.next-btn{
+  position: relative;
+  left: 45px;
+  top: 100px;
+}

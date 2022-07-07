@@ -17,16 +17,23 @@ const ExperiencePage = ()=>{
       const handleOnChange = (e)=>{
         const {name,value} = e.target;
         propertyName='item'+edubox.length//=>item[n] here n is the length of array of ids
-        setExpInfo((oldData)=>{
+      //   setExpInfo((oldData)=>{
                                                
-        return {...oldData,[name]:value}//{...olddata}=>saves all the older array, [property]:{[sub-property]:value}=>adds the diffeent sub-properties to the one same property name
-      })
-      setExp((oldData)=>{
-        return{...oldData,[propertyName]:expInfo}
-      })
-      setTotalInfo((oldData)=>{
-        return{...oldData,ExperienceInfo:exp}
-      })
+      //   return {...oldData,[name]:value}//{...olddata}=>saves all the older array, [property]:{[sub-property]:value}=>adds the diffeent sub-properties to the one same property name
+      // })
+      // setExp((oldData)=>{
+      //   return{...oldData,[propertyName]:expInfo}
+      // })
+      // setTotalInfo((oldData)=>{
+      //   return{...oldData,ExperienceInfo:exp}
+      // })
+      setTotalInfo(prevState => ({
+        ...prevState,
+        ExperienceData: {
+            ...prevState.ExperienceData,
+            [propertyName]:{...prevState.ExperienceData[propertyName],
+              [name]: value}}}))
+      console.log("data:"+totalInfo)
       }
     return(
         <div className="containersz secondary-cont animate__animated animate__fadeIn" >
@@ -42,10 +49,10 @@ const ExperiencePage = ()=>{
                           
                     <div className="Education-part" key={id}>
                     <h3 className="counter">{id}:</h3>
-                    <input id="Education" className="left-box-input" type="text" placeholder="NAME OF THE ORGANIZATION/COMPANY" name='companyName' onChange={handleOnChange}/>
-                    <input id="dasig" className="left-box-input dasig" type="text" placeholder="YOUR DASIGNATION/ROLE" name='role' onChange={handleOnChange}/> <div className="for-to">
-                    <input id="from-year exp-from" className="mid-box-input" type="number" placeholder="FROM" name='from' onChange={handleOnChange}/>
-                    <input id="to-year exp-to" className="mid-box-input" type="number" placeholder="TO" name='to' onChange={handleOnChange}/>
+                    <input id="" className="company-name-input" type="text" placeholder="NAME OF THE ORGANIZATION/COMPANY" name='companyName' onChange={handleOnChange}/>
+                    <input id="dasig" className="top-dasig" type="text" placeholder="YOUR DASIGNATION/ROLE" name='role' onChange={handleOnChange}/> <div className="for-to">
+                    <input id="from-year exp-from" className="top-dasig2 " type="number" placeholder="FROM" name='from' onChange={handleOnChange}/>
+                    <input id="to-year exp-to" className="top-dasig2" type="number" placeholder="TO" name='to' onChange={handleOnChange}/>
                   </div>
                     <textarea id="message" className="aboutDegree-textarea" type="text" placeholder="ANY ACHIVEMENTS,CERTIFICATES,MEDALS....." name='info' onChange={handleOnChange}></textarea> 
                                       

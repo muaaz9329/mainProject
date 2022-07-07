@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useContext } from 'react';
+import { Link } from 'react-router-dom';
 import { InfoContext } from '../../contextAPI/ContextApi';
 const SkillPage = ()=>{
   var propertyName;
@@ -17,15 +18,21 @@ const SkillPage = ()=>{
   const handleChange=(e)=>{
     const {name,value}=e.target
     propertyName = 'item'+edubox.length
-    setSkillInfo((olddata)=>{
-      return{...olddata,[name]:value}
-    })
-    setSkill((oldData)=>{
-      return{...oldData,[propertyName]:skillInfo}
-    })
-    setTotalInfo((oldData)=>{
-      return{...oldData,SkillInfo:skill}
-    })
+    // setSkillInfo((olddata)=>{
+    //   return{...olddata,[name]:value}
+    // })
+    // setSkill((oldData)=>{
+    //   return{...oldData,[propertyName]:skillInfo}
+    // })
+    // setTotalInfo((oldData)=>{
+    //   return{...oldData,SkillInfo:skill}
+    // })
+    setTotalInfo(prevState => ({
+      ...prevState,
+      SkillData: {
+          ...prevState.SkillData,
+          [propertyName]:{...prevState.SkillData[propertyName],
+            [name]: value}}}))
   }
   const handleChange2=(e)=>{
     document.getElementsByClassName('edit-items')[0].oninput = function () {
@@ -37,25 +44,24 @@ const SkillPage = ()=>{
   }
     const {name,value}=e.target
     propertyName = 'item'+edubox.length
-    setSkillInfo((olddata)=>{
-      return{...olddata,[name]:value}
-    })
-    setSkill((oldData)=>{
-      return{...oldData,[propertyName]:skillInfo}
-    })
-    setTotalInfo((oldData)=>{
-      return{...oldData,SkillInfo:skill}
-    })
+    // setSkillInfo((olddata)=>{
+    //   return{...olddata,[name]:value}
+    // })
+    // setSkill((oldData)=>{
+    //   return{...oldData,[propertyName]:skillInfo}
+    // })
+    // setTotalInfo((oldData)=>{
+    //   return{...oldData,SkillInfo:skill}
+    // })
+    setTotalInfo(prevState => ({
+      ...prevState,
+      SkillData: {
+          ...prevState.SkillData,
+          [propertyName]:{...prevState.SkillData[propertyName],
+            [name]: value}}}))
     console.log(totalInfo)
   }
-  const SubmissionChecking = ()=>{
-    if('item1' && 'item2' in totalInfo.EducationInfo){
-      console.log('property exsist')
-    }
-    else{
-      console.log('property doesny exsist')
-    }
-  }
+
     return(<div className="containersz secondary-cont animate__animated animate__fadeIn" >
     <div className="createResume">
       <div className="input-personal-form">
@@ -81,6 +87,7 @@ const SkillPage = ()=>{
       
       
           <button className="button-81" role="button" onClick={newInputBox}>+</button>
+          <Link to='/choDesign'><button className="button-81 next-btn">Next</button></Link>
           </div>
 
     

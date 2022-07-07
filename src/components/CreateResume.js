@@ -20,7 +20,7 @@ console.log(totalInfo)
     <Cont page={page2}/>
     <Cont page={page3}/>
     <Cont page={page4}/>
-    <Link to='/choDesign'><button>Next</button></Link>
+    
     </>)
     
 }

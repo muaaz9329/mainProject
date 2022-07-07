@@ -23,17 +23,23 @@ const EducationPage = ()=>{
     const handleChange = (e)=>{
       const {name,value} = e.target;
       propertyName='item'+edubox.length//=>item[n] here n is the length of array of ids
-      setEduDetail((oldData)=>{
+    //   setEduDetail((oldData)=>{
                                              
-      return {...oldData,[name]:value}//{...olddata}=>saves all the older array, [property]:{[sub-property]:value}=>adds the diffeent sub-properties to the one same property name
-    })
-    setEdu((oldData)=>{
-      return{...oldData,[propertyName]:eduDetail}
-    })
-    console.log(edu);
-    setTotalInfo((oldData)=>{
-      return{...oldData,EducationInfo:edu}
-    })
+    //   return {...oldData,[name]:value}//{...olddata}=>saves all the older array, [property]:{[sub-property]:value}=>adds the diffeent sub-properties to the one same property name
+    // })
+    // setEdu((oldData)=>{
+    //   return{...oldData,[propertyName]:eduDetail}
+    // })
+    // console.log(edu);
+    // setTotalInfo((oldData)=>{
+    //   return{...oldData,EducationInfo:edu}
+    // })
+    setTotalInfo(prevState => ({
+      ...prevState,
+      EducationData: {
+          ...prevState.EducationData,
+          [propertyName]:{...prevState.EducationData[propertyName],
+            [name]: value}}}))
     console.log(totalInfo)
     }
 
@@ -53,10 +59,11 @@ const EducationPage = ()=>{
                         <div className="Education-part" key={d.id}>
                           
                         <h3 className="counter">{id}</h3>
-                        <input id="Education eduction-change" className="left-box-input" type="text" placeholder="NAME OF THE DEGREE OR CERTICATE" name='degName'  onChange={handleChange}/>
-                        <input id="Education" className="left-box-input" type="text" placeholder="NAME OF THE INSTITUTION" name='instName'  onChange={handleChange}/>
-                        <input id="from-year" className="mid-box-input" type="number" placeholder="FROM" name='from'  onChange={handleChange}/>
-                        <input id="to-year" className="mid-box-input" type="number" placeholder="TO" name='to' onChange={handleChange}/>
+                        <input id="" className="company-name-input" type="text" placeholder="NAME OF THE DEGREE OR CERTIFICATE" name='degName' onChange={handleChange}/>
+                    <input id="dasig" className="top-dasig" type="text" placeholder="NAME OF COLLAGE OR UNIVERISTY" name='instName' onChange={handleChange}/> <div className="for-to">
+                    <input id="from-year exp-from" className="top-dasig2 small-width" type="number" placeholder="FROM" name='from' onChange={handleChange}/>
+                    <input id="to-year exp-to" className="top-dasig2 small-width" type="number" placeholder="TO" name='to' onChange={handleChange}/>
+                  </div>
 
                                           
                       </div></div>)
