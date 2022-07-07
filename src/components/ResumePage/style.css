@@ -201,7 +201,7 @@
   /* CSS */
   .button-81 {
     background-color: #044DF5;
-    border: 0 solid #5D5984;
+    border: 3px solid #5D5984;
     border-radius: 1.5rem;
     box-sizing: border-box;
     color: #E7E7F0;
@@ -288,4 +288,36 @@
     right: 230px;
     top: 0px;
   }
-  
+.downImage{
+  position: relative;
+  top: 300px;
+}
+.cont-last-btn{
+  position: relative;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  width: 400px;
+  height: 150px;
+  left: 100px;
+  top: 50px;
+}
+.last-btn{
+  position: relative;
+  left: -20px;
+
+}
+.download-head{
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+.download-head-1{
+  position: relative;
+  left: 190px;
+  top: 20px;
+}
+.download-head-2{
+  position: relative;
+  left: 125px;
+  top: 20px;
+}

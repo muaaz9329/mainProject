@@ -26,7 +26,7 @@ import StarsSystem from '../StarsSystem';
 	const education = data.EducationData
 	const skill = data.SkillData
 	const experience = data.ExperienceData;
-	const star =<div> <svg class="star"  width="120px" height="120px" viewBox="0 0 120 120" enable-background="new 0 0 120 120" ><circle cx="60" cy="60.834" r="54.167"/></svg></div>
+	const star =<div> <svg className="star"  width="120px" height="120px" viewBox="0 0 120 120" enableBackground="new 0 0 120 120" ><circle cx="60" cy="60.834" r="54.167"/></svg></div>
 	const number = parseInt(skill.item1.skillStars);
 
 	function capitalFirst(string) {

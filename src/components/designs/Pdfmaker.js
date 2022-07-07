@@ -1,29 +1,39 @@
-import React from "react";
-import jsPDF from "jspdf";
-import htmlToPdfmake from "html-to-pdfmake";
-import  pdfMake from 'pdfmake'
-import  pdfFonts from 'pdfmake/build/vfs_fonts'
+import React ,{useCallback, useRef}from "react";
+import * as htmlToImage from 'html-to-image';
+import { toPng,toJpeg } from 'html-to-image';
 const PdfMaker=(props)=>{
-    const handleFunction=()=>{
-    const doc = new jsPDF();
-         
-    //get table html
-    const pdfTable =document.getElementById('divToPrint');;
-    //html to pdf format
-    var html = htmlToPdfmake(pdfTable.innerHTML);
+    const ref = useRef()
+
+    const onButtonClick = useCallback(() => {
+      if (ref.current === null) {
+        return
+      }
   
-    const documentDefinition = { content: html };
-    pdfMake.vfs = pdfFonts.pdfMake.vfs;
-    pdfMake.createPdf(documentDefinition).open();
+      toPng(ref.current, { cacheBust: true })
+        .then((dataUrl) => {
+          const link = document.createElement('a')
+          link.download = 'my-image-name.png'
+          link.href = dataUrl
+          link.click()
+        })
+        .catch((err) => {
+          console.log(err)
+        })
+    }, [ref])
+  
+    return (
+      <> <div className="cont-last-btn">
+        <button onClick={onButtonClick} className='button-81 last-btn'>Click me</button>
+        <div className="download-head">
+        <h1 className="download-head-1">To</h1><h1 className="download-head-2">Download</h1></div>
+        </div>
+        <div ref={ref} className='downImage'>
+        {props.page}
+        </div>
+        
+      </>
+    )
 
-    }
-
-return(<>
-<div id="divToPrint">
-    {props.page}
-    </div> 
-    <button onClick={handleFunction} className='button-81'>Print</button></>
-)
 
 
 
