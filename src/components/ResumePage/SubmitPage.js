@@ -21,7 +21,6 @@ export const SubmitPage =()=>{
       </div>    
 
       <div className="submit-page-cont">
-      <button className="button-81 btn-submit-position" role="button" >Submit</button>
       <div className="checkbox checkbox-margins">
         <div className="checkbox-item ch-item1">
       <Link to="/design/1" state={{data:totalInfo}}><img className='design-template' src={design1}></img></Link>
@@ -31,7 +30,7 @@ export const SubmitPage =()=>{
         </div></div>
         <div className="CheckBox checkbox-margins">
         <div className="checkbox-item ch-item3">
-       <a href='/'> <img className='design-template' src={design3}></img></a>
+      <Link to="/design/3" state={{data:totalInfo}}> <a href='/'> <img className='design-template2' src={design3}></img></a></Link>
         </div>
         </div>
         

@@ -964,7 +964,7 @@ textarea:hover {
 .checkbox{
   position: relative;
   top: 10px;
-  left: 80px;
+  left: 200px;
   height: 350px;
   display:inline-flex;
 }
@@ -1000,6 +1000,18 @@ textarea:hover {
   box-shadow: -1px 12px 48px -4px rgba(0,0,0,0.75);
   -webkit-box-shadow: -1px 12px 48px -4px rgba(0,0,0,0.75);
   -moz-box-shadow: -1px 12px 48px -4px rgba(0,0,0,0.75);
+}
+.design-template2{
+  width: 200px;
+  height: auto;
+  padding: 0%;
+  margin: 0%;
+  position: relative;
+  left: -475px;
+  box-shadow: -1px 12px 48px -4px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -1px 12px 48px -4px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 12px 48px -4px rgba(0,0,0,0.75);
+  top: 357px;
 }
 .ch-item1{
   position: relative;

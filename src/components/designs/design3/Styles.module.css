@@ -1,0 +1,168 @@
+@font-face {
+	font-family: Design3Font;
+	src: url('./font/Poppins-Regular.ttf');
+ }
+ @font-face {
+	font-family: Design3Fontb;
+	src: url('./font/Poppins-SemiBold.ttf');
+ }
+ *{
+    padding: 0%;
+ }
+.template{
+    border: 2px black solid;
+    width: 600px;
+    height: 842px;
+    background-image: url('./img/template.jpg');
+    color: rgb(49, 49, 49);
+    font-family: Design3Font;
+    position: relative;
+    bottom: 300px;
+
+}
+.personal_cont{
+    position: relative;
+    width: 320px;
+    height: 66px;
+    left: 50px;
+    top: 50px;
+    padding: 0%;
+    margin: 0%;
+}
+.firstName_cont{    position: relative;
+    width: 151px;
+    height: 34px;
+    bottom: 18px;
+    padding: 0%;
+    font-size: 30px;
+    margin: 0%;
+}
+.lastName_cont{
+    position: relative;
+    width: 200px;
+    height: 34px;
+    bottom:28px ;
+    font-size: 30px;
+    margin: 0%;
+    left: px;
+    color: #f1cb59;
+    font-weight: 600;
+
+
+}
+.professtion_cont{
+    position: relative;
+    bottom: 25px;
+    height: 30px;
+    font-weight:100
+
+}
+.contact_cont{
+    position: relative;
+    width: 188px;
+    height: 60px;
+    top: 107px;
+    left: 80px;
+}
+.phoneNo_cont{
+    position: relative;
+    width: 122px;
+    height: 19px;
+}
+.email_cont{
+    position: relative;
+    width: 122px;
+    height: 19px;
+    bottom: px;
+    
+}
+.address_cont{
+    height: 19px;
+    position: relative;
+    font-size: 12px;
+}
+.p_intro_cont{
+    position: relative;
+    width: 288px;
+    height: 62px;
+    top: 180px;
+    left: 48px;
+    padding: 0%;
+    margin: 0%;
+    font-size: 12px;
+}
+.experience_cont{
+    position:relative;
+    top: 290px;
+    height: 110px;
+    width: 283px;
+    left: 48px;
+    margin-bottom: 20px;
+
+}
+.exp_desig_cont{
+    width: 120px;
+    height: 24px;
+    position: relative;
+    bottom: 40px
+}
+.exp_from_to_cont{
+    width: 90px;
+    height: 24px;
+    position: relative;
+    bottom: 63px;
+    left:110px;
+}
+.exp_companyName_cont{
+    width: 175px;
+    height: 24px;
+    position: relative;
+    bottom: 68px;
+    font-family: design3Fontb;
+}
+.exp_info_cont{
+    width: 280px;
+    height: 53px;
+    position: relative;
+    bottom: 70px;
+    font-size: 10px;
+
+}
+.education_cont{
+    position: relative;
+    bottom: 360px;
+    width:178px;
+    height: 55px;
+    left: 415px;
+    margin-bottom: 10px;
+}
+.edu_from_to_cont{
+    height: 21px;
+    width: 85px;
+    position: relative;
+    bottom: 20px;
+}
+.degreeName_cont{
+    width: 136px;
+    height: 17px;
+    position: relative;
+    bottom: 26px;
+    font-family: design3Fontb;
+}
+.instName_cont{
+    width: 178px;
+    height: 18px;
+    position: relative;
+    bottom:27px;
+    font-size: 10px;
+}
+.skill_name_cont{
+    position: relative;
+    bottom: 320px;
+    width: 120px;
+    height: 20px;
+    left: 420px;
+    font-family: design3Fontb;
+    margin-bottom: 10px;
+
+}

@@ -30,11 +30,11 @@ const Design2 = ()=>{
 
 
     <div className={styles.edu_cont}>
-       {education.item1.from && <p className={styles.from_to_cont}>
-      {education.item1.from} - {education.item2.to}  </p>}
-        <p className={styles.degname_cont}>{education.item1.degName}</p>
+       {education.item3.from && <p className={styles.from_to_cont}>
+      {education.item3.from} - {education.item3.to}  </p>}
+        <p className={styles.degname_cont}>{education.item3.degName}</p>
 
-        <p className={styles.instName_cont}>{education.item1.instName}</p>
+        <p className={styles.instName_cont}>{education.item3.instName}</p>
     </div>
 
 
@@ -64,23 +64,23 @@ const Design2 = ()=>{
 </div>
 <div className={styles.skill_cont}>
     <p className={styles.skillName_cont}>{skill.item1.skillName}</p>
-    <p className={styles.skillStar_cont}>{skill.item1.skillName}</p>
+    <p className={styles.skillStar_cont}>{skill.item1.skillStars}</p>
 </div>
 <div className={styles.skill_cont}>
     <p className={styles.skillName_cont}>{skill.item2.skillName}</p>
-    <p className={styles.skillStar_cont}>{skill.item2.skillName}</p>
+    <p className={styles.skillStar_cont}>{skill.item2.skillStars}</p>
 </div>
 <div className={styles.skill_cont}>
     <p className={styles.skillName_cont}>{skill.item3.skillName}</p>
-    <p className={styles.skillStar_cont}>{skill.item3.skillName}</p>
+    <p className={styles.skillStar_cont}>{skill.item3.skillStars}</p>
 </div>
 <div className={styles.skill_cont}>
     <p className={styles.skillName_cont}>{skill.item4.skillName}</p>
-    <p className={styles.skillStar_cont}>{skill.item4.skillName}</p>
+    <p className={styles.skillStar_cont}>{skill.item4.skillStars}</p>
 </div>
 <div className={styles.skill_cont}>
     <p className={styles.skillName_cont}>{skill.item5.skillName}</p>
-    <p className={styles.skillStar_cont}>{skill.item5.skillName}</p>
+    <p className={styles.skillStar_cont}>{skill.item5.skillStars}</p>
 </div>
 <div className={styles.contact_cont}>
     <p className={styles.no_cont}>{personal.phoneNo}</p>

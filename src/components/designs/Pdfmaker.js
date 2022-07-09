@@ -1,7 +1,10 @@
-import React ,{useCallback, useRef}from "react";
+import React ,{useCallback, useEffect, useRef}from "react";
 import * as htmlToImage from 'html-to-image';
 import { toPng,toJpeg } from 'html-to-image';
 const PdfMaker=(props)=>{
+  useEffect(()=>{
+    alert("Click on the image to download")
+  },)
     const ref = useRef()
 
     const onButtonClick = useCallback(() => {
