@@ -1,0 +1,194 @@
+@font-face {
+	font-family: Design2Font;
+	src: url('./font/Poppins-Regular.ttf');
+ }
+ @font-face {
+	font-family: Design2Fontb;
+	src: url('./font/Poppins-SemiBold.ttf');
+ }
+ *{
+    padding: 0%;
+    margin: 0%;
+    border: 0cm;
+ }
+p{
+   text-align: left;
+}
+ .template{
+    font-family: Design2Font;
+    width: 595px;
+    height: 842px;
+    position: relative;
+    left: 0px;
+    bottom: 300px;
+    background-image: url('./imgs/template.jpg');
+    float: left;
+ }
+ .edu_cont{
+    width: 150px;
+    height: 60px;
+    position: relative;
+    top: 330px;
+    left: 53px;
+    padding: 0%;
+    margin: 0%;
+    border: 0%;
+    color: white;
+ }
+ .from_to_cont{
+    position: relative;
+    width: 80px;
+    height: 16px;
+    padding: 0%;
+    margin: 0%;
+    border: 0%;
+    font-size: 14px;
+
+ }
+ .degname_cont{
+    position: relative;
+    width: 94px;
+    height: 17px;
+    padding: 0%;
+    margin: 0%;
+    border: 0%;
+    font-size: 14px;
+    font-family: Design2Font;
+    margin-top: 4px;
+
+ }
+ .instName_cont{
+    position: relative;
+    height: 17px;
+    width: 146px;
+    padding: 0%;
+    margin: 0%;
+    border: 0%;
+    font-size: 9px;
+    margin-top: 4px;
+
+ }
+ .name_cont{
+    color: #2e323e;
+ }
+ .firstName_cont{
+    position: relative;
+    width: 300px;
+    height: 38px;
+    left: 253px;
+    bottom: 140px;
+    font-family: Design2Fontb;
+    font-size:40px;
+ }
+ .lastName_cont{
+    position: relative;
+    width: 350px;
+    height: 42px;
+    bottom: 140px;
+    left: 253px;
+    font-family: Design2Fontb;
+    font-size: 40px;
+ }
+ .intro_cont{
+    position: relative;
+    width: 168px;
+    height: 24px;
+    left: 255px;
+    bottom: 130px;
+ }
+ .professtion_cont{
+    position: relative;
+    width: 290px;
+    height: 100px;
+    left: 253px;
+    bottom:20px;
+    font-size: 12px;
+ }
+ .experience_cont{
+    position: relative;
+    width: 306px;
+    height: 100px;
+    left: 253px;
+    top: 40px;
+    margin-bottom: 20px;
+    color: #2e323e;
+ }
+ .exp_from_to_cont{
+    width: 57px;
+    height: 23px;
+    font-size: 12px;
+ }
+ .exp_company_cont{
+    position: relative;
+    width: 69px;
+    height: 20px;
+    top: -1px;
+    font-size: 15px;
+ }
+ .exp_desig_cont{
+    position: relative;
+    width: 156px;
+    height: 15px;
+    left: 90px;
+    bottom: 45px;
+    font-size: 15px;
+    font-family: Design2Fontb;
+ }
+ .exp_info_cont{
+    position: relative;
+    width: 206px;
+    height: 57px;
+    left: 90px;
+    bottom: 32px;
+    font-size: 10px;
+ }
+ .skillName_cont{
+    position: relative;
+    width: 75px;
+    height: 20px;
+    left: 55px;
+    bottom: 170px;
+    color: white;
+    font-size: 12px;
+ }
+ .skillStar_cont{
+    position: relative;
+    width: 75px;
+    height: 20px;
+    left: 135px;
+    bottom: 194px;
+ }
+ .no_cont{
+    position: relative;
+    width: 88px;
+    height: 15px;
+    bottom: 820px;
+    left: 55px;
+    padding: 0%;
+    margin: 0%;
+    color: white;
+    font-size: 14px;
+ }
+ .email_cont{
+    position: relative;
+    width: 116px;
+    height: 15px;
+    bottom: 835px;
+    left: 55px;
+    padding: 0%;
+    margin: 0%;
+    font-size: 10px;
+    color: white;
+ }
+.address_cont{
+    position: relative;
+    width: 110px;
+    height: 45px;
+    bottom: 750px;
+    left: 55px;
+    padding: 0%;
+    margin: 0%;
+    color: white;
+    font-size: 10px;
+    
+}

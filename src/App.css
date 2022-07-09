@@ -1052,3 +1052,7 @@ z-index: 12;
   left: 45px;
   top: 100px;
 }
+.downImage{
+  width: fit-content;
+  height: fit-content;
+}

@@ -9,7 +9,7 @@ const PdfMaker=(props)=>{
         return
       }
   
-      toPng(ref.current, { cacheBust: true })
+      toJpeg(ref.current, { cacheBust: true })
         .then((dataUrl) => {
           const link = document.createElement('a')
           link.download = 'my-image-name.png'
@@ -22,14 +22,11 @@ const PdfMaker=(props)=>{
     }, [ref])
   
     return (
-      <> <div className="cont-last-btn">
-        <button onClick={onButtonClick} className='button-81 last-btn'>Click me</button>
-        <div className="download-head">
-        <h1 className="download-head-1">To</h1><h1 className="download-head-2">Download</h1></div>
-        </div>
+      <> 
+        <button onClick={onButtonClick} >
         <div ref={ref} className='downImage'>
         {props.page}
-        </div>
+        </div></button>
         
       </>
     )

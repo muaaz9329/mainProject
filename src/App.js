@@ -9,6 +9,7 @@ import AboutPage from './components/AboutPage';
 import ContactPage from './components/ContactPage';
 import ChooseDesign from './components/ChooseDesign';
 import ReadyDesign1 from './components/designs/readyRoutes/ReadyDesign1';
+import ReadyDesign2 from './components/designs/readyRoutes/ReadyDesign2';
 import ExperiencePage from './components/ResumePage/ExperiencePage';
 function App() {
   const [mode,setMode]=useState({
@@ -109,6 +110,7 @@ function App() {
       
     <Router>
       <Routes>
+        <Route path='/design/2' element={<ReadyDesign2/>}/>
         <Route path='/design/1' element={<ReadyDesign1/>}/>
         <Route path='/choDesign' element={<ChooseDesign/>}/>
         <Route path='/' element={<RenderComponents />}/>

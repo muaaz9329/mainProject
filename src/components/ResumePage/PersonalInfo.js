@@ -41,10 +41,10 @@ return(<div className="createResume">
     <input id="prof-name" className="right-box-input" type="text" placeholder="profession"  name="profession" required='true'  onChange={handleChange}/>
 
     <input id="address" className="right-box-input" type="text" placeholder="address" name="address" required='true'  onChange={handleChange}/>
-    <input id="name" className="left-box-input input-lastName" type="text" placeholder="Last Name" name="lastName" required='true' maxlength='295' onChange={handleChange}/>
+    <input id="name" className="left-box-input input-lastName" type="text" placeholder="Last Name" name="lastName" required='true'  onChange={handleChange}/>
 
 
-    <textarea id="message" className="about-textarea" type="text" placeholder="WRITE ABOUT YOURSELF i.e YOUR HOBBIES, INTREAST.." name="userInfo" onChange={handleChange}></textarea>                   
+    <textarea id="message" className="about-textarea" type="text" placeholder="WRITE ABOUT YOURSELF i.e YOUR HOBBIES, INTREAST.." name="userInfo" maxlength='295' onChange={handleChange}></textarea>                   
 
 </form>
 </div>
