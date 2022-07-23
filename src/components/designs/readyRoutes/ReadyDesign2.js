@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
-import Design2 from '../design2/Design2'
+import React from 'react';
+import Design2 from '../design2/DesignReady2'
 import PdfMaker from '../Pdfmaker';
 const ReadyDesign2 = ()=>{
 const page = <Design2/>
-return(<div>
+return(
     <PdfMaker page={page}/>
-</div>)
+)
 }
 export default ReadyDesign2;

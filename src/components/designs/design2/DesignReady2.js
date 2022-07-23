@@ -64,23 +64,18 @@ const Design2 = ()=>{
 </div>
 <div className={styles.skill_cont}>
     <p className={styles.skillName_cont}>{skill.item1.skillName}</p>
-    <p className={styles.skillStar_cont}>{skill.item1.skillStars}</p>
 </div>
 <div className={styles.skill_cont}>
     <p className={styles.skillName_cont}>{skill.item2.skillName}</p>
-    <p className={styles.skillStar_cont}>{skill.item2.skillStars}</p>
 </div>
 <div className={styles.skill_cont}>
     <p className={styles.skillName_cont}>{skill.item3.skillName}</p>
-    <p className={styles.skillStar_cont}>{skill.item3.skillStars}</p>
 </div>
 <div className={styles.skill_cont}>
     <p className={styles.skillName_cont}>{skill.item4.skillName}</p>
-    <p className={styles.skillStar_cont}>{skill.item4.skillStars}</p>
 </div>
 <div className={styles.skill_cont}>
     <p className={styles.skillName_cont}>{skill.item5.skillName}</p>
-    <p className={styles.skillStar_cont}>{skill.item5.skillStars}</p>
 </div>
 <div className={styles.contact_cont}>
     <p className={styles.no_cont}>{personal.phoneNo}</p>
